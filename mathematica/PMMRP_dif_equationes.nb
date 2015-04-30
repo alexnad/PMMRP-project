@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[     68855,       1552]
-NotebookOptionsPosition[     67125,       1497]
-NotebookOutlinePosition[     67468,       1512]
-CellTagsIndexPosition[     67425,       1509]
+NotebookDataLength[     70586,       1601]
+NotebookOptionsPosition[     68833,       1545]
+NotebookOutlinePosition[     69176,       1560]
+CellTagsIndexPosition[     69133,       1557]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -1493,7 +1493,55 @@ rjxjGPPrDIEPXvgPzVGu40fzUj8TWO9VnG4PWmh0a3fxmSPQkcF1Wk25eXLp
   PlotRangeClipping->True,
   PlotRangePadding->{Automatic, Automatic}]], "Output",
  CellChangeTimes->{{3.6387898260742416`*^9, 3.6387898785869246`*^9}}]
-}, Open  ]]
+}, Open  ]],
+
+Cell[BoxData[{
+ RowBox[{"\[Alpha]", "=", "0.001"}], "\[IndentingNewLine]", 
+ RowBox[{"\[Beta]", "=", "0.1"}], "\[IndentingNewLine]", 
+ RowBox[{"T", "=", "1"}], "\[IndentingNewLine]", 
+ RowBox[{"X", "=", "1"}], "\[IndentingNewLine]", 
+ RowBox[{"length", "=", 
+  RowBox[{"Ceiling", "[", 
+   RowBox[{"X", "/", "\[Beta]"}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"hight", "=", 
+  RowBox[{"Ceiling", "[", 
+   RowBox[{"T", "/", "\[Alpha]"}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"\[Phi]0", "[", "x_", "]"}], "=", " ", 
+  RowBox[{"If", "[", 
+   RowBox[{
+    RowBox[{"x", "<", "0.3"}], ",", 
+    RowBox[{"0.3", "-", "x"}], ",", "0"}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"valuesV", " ", "=", " ", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"\[Phi]0", "[", 
+     RowBox[{"j", "*", "\[Beta]"}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"i", ",", "hight"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"j", ",", "length"}], "}"}]}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"valuesN", " ", "=", " ", 
+  RowBox[{"Table", "[", 
+   RowBox[{"0", ",", 
+    RowBox[{"{", 
+     RowBox[{"i", ",", "hight"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"j", ",", "length"}], "}"}]}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"valuesH", " ", "=", " ", 
+  RowBox[{"Table", "[", 
+   RowBox[{"0", ",", 
+    RowBox[{"{", 
+     RowBox[{"i", ",", "hight"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"j", ",", "length"}], "}"}]}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"valuesN", " ", "=", " ", 
+  RowBox[{"Table", "[", 
+   RowBox[{"0", ",", 
+    RowBox[{"{", 
+     RowBox[{"i", ",", "hight"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"j", ",", "length"}], "}"}]}], "]"}]}]}], "Input"]
 },
 WindowSize->{1350, 631},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
@@ -1536,13 +1584,13 @@ Cell[CellGroupData[{
 Cell[12805, 443, 574, 15, 31, "Input"],
 Cell[13382, 460, 29013, 517, 245, "Output"]
 }, Open  ]],
-Cell[42410, 980, 94, 1, 31, InheritFromParent],
+Cell[42410, 980, 94, 1, 31, "Input"],
 Cell[CellGroupData[{
 Cell[42529, 985, 1027, 30, 52, "Input"],
 Cell[43559, 1017, 522, 17, 31, "Output"],
 Cell[44084, 1036, 9534, 163, 241, "Output"]
 }, Open  ]],
-Cell[53633, 1202, 94, 1, 31, InheritFromParent],
+Cell[53633, 1202, 94, 1, 31, "Input"],
 Cell[53730, 1205, 145, 2, 31, "Input"],
 Cell[CellGroupData[{
 Cell[53900, 1211, 1099, 32, 52, "Input"],
@@ -1552,11 +1600,11 @@ Cell[55476, 1262, 7928, 136, 241, "Output"]
 Cell[CellGroupData[{
 Cell[63441, 1403, 1099, 32, 52, "Input"],
 Cell[64543, 1437, 475, 15, 31, "Output"],
-Cell[65021, 1454, 2088, 40, 273, "Output"]
-}, Open  ]]
+Cell[65021, 1454, 2088, 40, 241, "Output"]
+}, Open  ]],
+Cell[67124, 1497, 1705, 46, 232, "Input"]
 }
 ]
 *)
 
 (* End of internal cache information *)
-
